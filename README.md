@@ -1,2 +1,4 @@
-# pp
-pretty print with colours, handy for debugging
+pretty printer
+==============
+
+`fmt.Println()` with easy color options.
