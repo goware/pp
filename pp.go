@@ -83,21 +83,21 @@ func Green(msg string, args ...interface{}) *PP {
 }
 
 func Yellow(msg string, args ...interface{}) *PP {
-	return NewPP().Green(msg, args...)
+	return NewPP().Yellow(msg, args...)
 }
 
 func Blue(msg string, args ...interface{}) *PP {
-	return NewPP().Green(msg, args...)
+	return NewPP().Blue(msg, args...)
 }
 
 func Magenta(msg string, args ...interface{}) *PP {
-	return NewPP().Green(msg, args...)
+	return NewPP().Magenta(msg, args...)
 }
 
 func Cyan(msg string, args ...interface{}) *PP {
-	return NewPP().Green(msg, args...)
+	return NewPP().Cyan(msg, args...)
 }
 
 func White(msg string, args ...interface{}) *PP {
-	return NewPP().Green(msg, args...)
+	return NewPP().White(msg, args...)
 }
