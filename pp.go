@@ -6,12 +6,10 @@ import (
 	"os"
 )
 
-var DisableColors = false
-
-// cW(buf, false, bRed, "\n")
-// cW(buf, useColor, bCyan, " panic: ")
-// cW(buf, useColor, bBlue, "%v", rvr)
-// cW(buf, false, bWhite, "\n \n")
+var (
+	UseColors   = true
+	ForceColors = false
+)
 
 type PP struct {
 	buf      *bytes.Buffer
@@ -21,7 +19,7 @@ type PP struct {
 func NewPP() *PP {
 	return &PP{
 		buf:      &bytes.Buffer{},
-		useColor: !DisableColors,
+		useColor: UseColors,
 	}
 }
 
